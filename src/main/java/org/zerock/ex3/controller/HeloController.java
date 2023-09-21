@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.zerock.ex3.entity.MyData;
 import org.zerock.ex3.repository.MyDataRepository;
-
 import javax.annotation.PostConstruct;
-import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -27,6 +25,7 @@ public class HeloController {
         mav.addObject("msg","this is sample content.");
         Iterable<MyData> list = repository.findAll();
         mav.addObject("datalist",list);
+        //update_em();
         return mav;
     }
 
