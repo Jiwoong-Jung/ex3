@@ -1,9 +1,15 @@
 package org.zerock.ex3.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
 
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @ToString
 @Entity
 @Table(name="mydata")
