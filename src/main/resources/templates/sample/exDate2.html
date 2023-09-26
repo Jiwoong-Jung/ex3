@@ -8,7 +8,8 @@
 <p th:text="${test}"></p>
 <ul>
     <li th:each="dto : ${list}">
-        [[${dto.sno}]] --- [[${#temporals.format(dto.regTime, 'yyyy/MM/dd')}]]
+        [[${dto.regTime}]],
+        [[${dto.sno}]] --- [[${#temporals.format(dto.regTime, 'yyyy/MM/dd HH:mm')}]]
     </li>
 </ul>
 </body>
