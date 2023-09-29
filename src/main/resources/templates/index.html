@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
 
-<th:block th:replace="~{/layout/basic :: setContent(~{this::content} )}">
-  <th:block th:fragment="content">
+<html lang="ko" xmlns:th="http//www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/basic.html}">
+
+<div layout:fragment="content">
 <head>
   <title>top page</title>
   <meta http-equiv="Content-Type"
@@ -43,6 +45,5 @@
   </tr>
 </table>
 </body>
-  </th:block>
-</th:block>
+</div>>
 </html>
